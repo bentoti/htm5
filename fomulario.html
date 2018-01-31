@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>4cti Informatica</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+</head>
+	<body>
+
+		<form method="POST" action="contatos.php">
+			<div class="form-group">
+				<label for="nome">Nome</label>
+				<input type="text" name="nome" id="nome" class="form-control" required placeholder="Digite o Seu nome">
+			
+			</div>
+              
+              <div class="form-group">
+				<label for="email">E-mail</label>
+				<input type="email" name="email" id="email" class="form-control" required placeholder="seu@email.com.br">
+			</div>
+
+				<div class="form-group">
+				<label for="nascimento">Nacimento</label>
+				<input type="date" name="nascimento" id="nascimento" class="form-control" required min="1910-01-30" max="2019-01-20"> 
+		    </div>
+		    <div class="form-group">
+				<label for="sexo"> Sexo</label>
+				<input type="radio" name="sexo" id="masculino" class="form-control"> 
+				<label for="masculino">Masculino</label>
+				<input type="radio" name="sexo" id="feminino" class="form-control"> 
+				<label for="masculino">Feminino</label>
+			 </div>
+			 <div class="form-group">
+				<label for="li">Li o Contrato</label>
+				<input type="checkbox" name="li" id="li" required checked="li"> 
+		    </div>
+           <div class="form-group">
+				<label for="li">Volume</label>
+				<input type="range" name="volume" id="volume" min="0" max="100" value="30"> 
+		    </div>
+		    <div class="form-group">
+				<label for="meter">Bateria</label>
+				<meter min="0" name="meter" max="100" low="10" value="50">10</meter> 
+		    </div>
+				
+
+			<div class="form-group">
+				<label for="meter">Caregando</label>
+				<progress  min="0" max="100">60%</progress> 
+		    </div>	
+			<div class="form-group">
+				<label for="ano">Ano de Fabricação</label>
+				<input type="number" name="ano" id="ano" min="1920" max="2016" step="2" value="2018" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="cor">cor</label>
+				<input type="color" name="cor" id="cor"  class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="url">URL</label>
+				<input type="url" name="url" id="url"  class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="Busca">Busca</label>
+				<input type="search" name="Busca" id="Busca"  class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="mensagem">Mensagem</label>
+				<textarea  name="mensagem" id="mensagem" cols="80" rows="10"></textarea>
+			</div>
+
+			<div class="form-group">
+				<label for="estados">Estado</label>
+				<select name="estados" id="estados" multiple size="10">
+					<optgroup label="NORDESTE">
+					<option value="CE" selected="CEARA">CEARA</option>
+					<option value="RN">RIO GRANDE DO NORTE</option>
+					<option value="PE">PENABUNCO</option>
+					<option value="PB">PARAIBA</option>
+					<option value="MA">MARANHAO</option>
+					<option value="PI">PIAUI</option>
+					<option value="BA">BAHIA</option>
+					<option value="AL">ALAGOAS</option>
+					<option value="SE">SEGIPE</option>
+					</optgroup>
+						<optgroup label="CENTRO OESTE">
+							<option value="GO">GOIAS</option>
+							<option value="BRA">BRASILIA</option>
+						</optgroup>
+							<optgroup></optgroup> label="SULDESTE">
+								<option value="RJ">RIO DE JANEIRO</option>
+								<option value="SP">SAO PAULO</option>
+								<option value="MG">MINAS GERAIS</option>
+							</optgroup></optgroup>>
+								<optgroup></optgroup>  label="SUL">
+										<option value="SC">SANTA CATARINA</option>
+										<option> valeu="RS">RIO GRANDE DO SUL</option>
+									</optgroup>
+												</select>
+
+														</div>
+
+		            	<input type="hidden" name="id" value="1">
+					 <div>
+		            	<label for="senha">Senha</label>
+		            	<input type="password" name="senha" id="senha" class="form-control">
+		           	 </div>
+		           	 <div class="form-group">
+		           	 	<label for="mes">Mês</label>
+		           	 	<input type="month" name="mes" id="mes" class="form-control">
+		           	 </div>
+		           	  <div class="form-group">
+		           	 	<label for="Semana">Semana</label>
+		           	 	<input type="week" name="Semana" id="Semana" class="form-control">
+		           	 </div>
+
+		           	 </div>
+		           	  <div class="form-group">
+		           	 	<label for="time">Hora</label>
+		           	 	<input type="time" name="hora" id="hora" class="form-control">
+		           	 </div>
+
+
+
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary">Cadastrar</button>
+			</div>
+			
+
+		</form>
+
+
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>
